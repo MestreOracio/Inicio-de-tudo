@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Super D20</h1>
+    <button onclick="rolarDado()">Rolar D20</button>
+    <h2 id="resultado">Role a Iniciativa!</h2>
+
+    <script>
+        function rolarDado() {
+            // Gera um número entre 1 e 20
+            let numeroAleatorio = Math.floor(Math.random() * 20) + 1;
+            
+            // Exibe na tela
+            document.getElementById("resultado").innerText = "O resultado de sua rolagem é: " + numeroAleatorio;
+        }
+    </script>
+</body>
+</html>
